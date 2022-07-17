@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emailer</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 10px 0;
+            line-height: 25px;
+        }
+
+        .main_table {
+            width: 640px;
+            margin: 0 auto;
+        }
+
+        .main_table tr td {
+            padding: 0 10px;
+        }
+
+        table {
+            border-collapse: collapse;
+
+        }
+
+        .corosal-head {
+            text-align: center;
+        }
+
+
+        .claim {
+            text-decoration: none;
+            border: 2px solid rgb(0, 187, 255);
+            border-radius: 3px;
+            padding: 10px 20px;
+            font-size: 15px;
+            font-weight: 700;
+            color: black;
+        }
+
+        .table1_tr4 td div {
+            float: left;
+            width: 50%
+        }
+
+        .table1_tr5 td div {
+            float: right;
+            width: 50%
+        }
+
+        .table2 {
+            float: left;
+            width: 50%;
+        }
+
+
+
+        .table3 {
+            width: 33.33%;
+        }
+
+        .float {
+            float: left;
+        }
+
+        .table3 tr td img {
+            height: 100px;
+        }
+
+        img {
+            pointer-events: none
+        }
+
+        @media screen and (max-width:640px) {
+
+            .table1_tr4 td div,
+            .table1_tr5 td div,
+            .table2 {
+                width: 100%;
+            }
+
+
+
+            .table3 {
+                width: 50%;
+            }
+
+            .table3 tr td p {
+                margin: 0 50px;
+                font-size: 15px;
+                line-height: 20px;
+            }
+
+            .table3 tr td img {
+                height: 150px;
+            }
+
+            .spacer {
+                margin: 50px 0;
+            }
+        }
+
+        @media screen and (max-width:340px) {
+            .table3 {
+                width: 100%;
+            }
+
+            .spacer {
+                margin: 50px 0;
+            }
+
+            .table3 tr td p {
+                margin: 0 10px;
+                font-size: 27px;
+                line-height: 30px;
+            }
+
+            .table3 tr td img {
+                height: 250px;
+            }
+
+            .corosal-head h3 {
+                font-size: 30px;
+            }
+
+            .corosal-head p {
+                font-size: 20px;
+            }
+        }
+
+        /* @media screen and (max-width:640px) {} */
+    </style>
+</head>
+
+<body>
+    <table class="main_table">
+        <tr>
+            <td style="width: 100%;">
+                <img style="width: 100%;" src="./images/img2.png" alt="">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>
+                    Creating responsive email magic
+                </h2>
+            </td>
+        </tr>
+        <tr>
+            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum minima eius corporis quia voluptatibus
+                quibusdam ipsum suscipit laudantium, deleniti, rerum, consequuntur consequatur velit fugiat ducimus quo.
+                Vitae corporis placeat provident!</td>
+        </tr>
+        <tr class="table1_tr4">
+            <td>
+                <div>
+                    <img style="width: 100%;" src="./images/img3.png" alt="">
+                </div>
+                <table class="table2">
+                    <tr>
+                        <td>
+                            <h4>Lorem ipsum dolor sit amet.</h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="color: rgb(85, 85, 85);">
+                            <p>
+
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing
+                                elit. Aperiam porro sint officia dicta
+                                rerum totam vel dolorum voluptas ratione odit!
+                            </p>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-top:20px;"><a class="claim" href="https://www.indegene.com/"
+                                target="_blank">Claim your now</a>
+                            <div class="spacer"></div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr class="table1_tr5">
+            <td>
+                <div><img style="width: 100%;" src="./images/img3.png" alt=""></div>
+                <table class="table2">
+                    <tr>
+                        <td>
+                            <h4>Lorem ipsum dolor sit amet.</h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="color: rgb(85, 85, 85);">
+                            <p>
+
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing
+                                elit. Aperiam porro sint officia dicta
+                                rerum totam vel dolorum voluptas ratione odit!
+                            </p>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-top: 20px;"><a class="claim" href="https://www.indegene.com/"
+                                target="_blank">Look it in</a></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="corosal-head">
+                <div class="spacer"></div>
+                <h3>Lorem ipsum dolor sit amet.</h3>
+            </td>
+        </tr>
+        <tr>
+            <td class="corosal-head">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, vero?</p>
+                <div class="spacer"></div>
+            </td>
+        </tr>
+        <tr>
+            <td style="font-size: 12px;text-align:center">
+                <table class="table3 float">
+                    <tr>
+                        <td><img src="./images/bag.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, tenetur praesentium.</p>
+                            <div class="spacer"></div>
+                        </td>
+                    </tr>
+                </table>
+                <table class="table3 float">
+                    <tr>
+                        <td><img src="./images/folder.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, repudiandae sit?</p>
+                            <div class="spacer"></div>
+                        </td>
+                    </tr>
+                </table>
+                <table class="table3 float">
+                    <tr>
+                        <td><img src="./images/flower.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, beatae!</p>
+                            <div class="spacer"></div>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="table3 float">
+                    <tr>
+                        <td><img src="./images/paint.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, tenetur praesentium.</p>
+                            <div class="spacer"></div>
+                        </td>
+                    </tr>
+                </table>
+                <table class="table3 float">
+                    <tr>
+                        <td><img src="./images/envelope.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, repudiandae sit?</p>
+                            <div class="spacer"></div>
+                        </td>
+                    </tr>
+                </table>
+                <table class="table3 float">
+                    <tr>
+                        <td><img src="./images/book.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, beatae!
+                            </p>
+                            <div class="spacer"></div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td style="width: 10%;"><img style="width: 100%;" src="./images/avatar2.png" alt=""></td>
+                        <td style="width: 90%;font-size: small;text-align: center;">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci at aliquam soluta
+                                provident qui consectetur nam explicabo. Quae?</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td style="width: 90%;font-size: small;text-align: center;">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci at aliquam soluta
+                                provident qui consectetur nam explicabo. Quae?</p>
+                        </td>
+                        <td style="width: 10%;"><img style="width: 100%;" src="./images/avatar3.png" alt=""></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
