@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+canvas{
+    background-color: rgb(247, 245, 242);
+    margin-top: 30px;
+
+}
+input,button{
+    font-size: 15px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 0;
+
+}
+input{
+    background-color: antiquewhite;
+    border: 0;
+    width: 400px;
+
+}
+.submit{
+    padding: 8px 25px ;
+    background-color: rgb(12, 182, 204);
+    color: white;
+}
+.clear{
+    padding: 8px 25px ;
+    background-color: rgb(204, 66, 12);
+    color: white;
+}
+.next {
+    text-decoration: none;
+    background-color: rgb(6, 105, 109);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}

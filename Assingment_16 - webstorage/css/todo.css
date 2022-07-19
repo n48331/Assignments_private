@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+ul{
+    display: inline; 
+}
+ul li{
+  background-color: antiquewhite;
+  margin: 5px 5px;
+  height: 40px;
+  list-style-type: none;
+  padding:8px 30px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.task{
+    float: left;
+    width: 40%;
+}
+
+.dl{
+    float: left;
+    width: 30%;
+    color: cadetblue;
+}
+.complete{
+    color: white;
+    background-color: rgb(7, 106, 131);
+    padding: 2px 30px;
+    float: left;
+    width: 25%;
+}
+
+.next {
+    text-decoration: none;
+    background-color: rgb(6, 105, 109);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}

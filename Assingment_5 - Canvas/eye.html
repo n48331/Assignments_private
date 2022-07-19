@@ -1,0 +1,111 @@
+<!-- 1.	Replicate the below mentioned image in using HTML5 Canvas. Following the styling.
+Download the image and ensure the quality of the image.
+Consider fallback content.
+Width of line: 10, 6, 5, 3, 2 -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Eye</title>
+    <style>
+         /* to handling fallback content */
+         canvas {
+            background-image: url('');
+        }
+
+        canvas.active {
+            background-image: none;
+        }
+        a{
+            text-decoration: none;
+            background-color:rgb(233, 47, 202);
+            padding: 8px;
+            margin-left: 20px;
+            color: rgb(255, 255, 255);
+        }
+        canvas{
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas" width="800px" height="550px">
+        your browser does not support canvas</canvas>
+    <br><br>
+    <!-- download it when user click on download button/a  -->
+    <a 
+    id="download" 
+    download="myImage.jpg" 
+    href="" 
+    onclick="downloadImage(this)">Download</a>
+
+<script>
+    var canvas = document.getElementById('myCanvas')
+    var ctx = canvas.getContext('2d'); 
+    if(ctx){
+        //ensure the quality of the image
+        var pixelRatio = window.devicePixelRatio;
+        var sizeOnScreen = canvas.getBoundingClientRect();
+        canvas.width = sizeOnScreen.width * pixelRatio;
+        canvas.height = sizeOnScreen.height * pixelRatio;
+        canvas.style.width = (canvas.width / pixelRatio) + 'px';
+        canvas.style.height = (canvas.height / pixelRatio) + 'px';
+        // Lines
+        ctx.moveTo(50, 50);
+        ctx.lineTo(300, 50);
+        ctx.lineWidth=10;
+        ctx.stroke()
+
+        ctx.beginPath();
+        ctx.moveTo(50, 80);
+        ctx.lineWidth=6;
+        ctx.lineTo(500, 80);
+        ctx.stroke()
+
+        ctx.beginPath();
+        ctx.moveTo(50, 110);
+        ctx.lineWidth=5;
+        ctx.lineTo(400, 110);
+        ctx.stroke()
+
+        ctx.beginPath();
+        ctx.moveTo(50, 140);
+        ctx.lineWidth=3;
+        ctx.lineTo(450, 140);
+        ctx.stroke()
+
+        ctx.beginPath();
+        ctx.moveTo(50, 170);
+        ctx.lineWidth=2;
+        ctx.lineTo(350, 170);
+        ctx.stroke()
+// Eye
+        ctx.beginPath();
+        ctx.moveTo(50,260);
+        ctx.quadraticCurveTo(200,160,360,260);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(50,260);
+        ctx.quadraticCurveTo(200,340,360,260);
+        ctx.stroke();
+// Circle
+        ctx.beginPath();
+        ctx.arc(200,255,45,1,8)
+        ctx.stroke();
+        
+       
+    }
+
+    downloadImage = function (el) {
+            // toDataURL ??
+                var image = canvas.toDataURL('image/jpg');
+                el.href = image;
+            }
+   
+    
+</script>
+</body>
+</html>

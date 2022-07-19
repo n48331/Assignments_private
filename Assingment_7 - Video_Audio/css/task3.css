@@ -1,0 +1,52 @@
+
+        *{
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        
+        audio::-webkit-media-controls-panel {
+            background-color: rgb(240, 240, 240);
+            
+        }
+
+        audio::-webkit-media-controls-play-button {
+            background-color: aliceblue;
+            border-radius: 50%;
+        }
+        .audio-player{
+            background-color: rgb(237, 243, 241);
+            height: 160px;
+            width: 500px;
+            margin: 20px;
+            border-left: 5px solid rgb(199, 197, 197);
+        }
+        a{
+            border-radius: 200px;
+            text-decoration: none;
+        }
+        .desc{
+            margin-left: 160px;
+            margin-top: -110px;
+        }
+        .desc p{
+            color: rgb(175, 168, 168);
+        }
+        .playpause{
+            margin: -25px 0 20px 20px;
+        }
+        ul li{
+            float: left;
+            margin:0 10px 0px 10px;
+            color: rgb(124, 124, 240);
+        }
+        ul{
+            margin-left: -50px;
+        }
+        .navs{
+            text-decoration: none;
+    float: right;
+    margin-right: 30px;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(231, 69, 118);
+        }

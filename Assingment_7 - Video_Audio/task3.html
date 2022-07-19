@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Audio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/task3.css">
+</head>
+<!-- 3.	Replicate the below UI.
+User should Play and pause the Audio -->
+
+<body>
+    <div>
+    <audio id="audio" >
+        <source src="./audio/file_example_MP3_700KB.mp3" type="audio/mp3">
+        <source src="./audio/file_example_OOG_1MG.ogg" type="audio/ogg">
+        <source src="./audio/file_example_WAV_1MG.wav" type="audio/wav">
+        <!-- fallback -->
+        <embed width="100" height="100" src="./audio/file_example_MP3_700KB.mp3">
+    </audio>
+</div>
+   
+<div class="audio-player">
+   <br><br><br>
+   <div class="playpause">
+       <a id="playpause" href="#"><i
+        style="color: gray;font-size:100px"
+        class="fa-solid fa-circle-play"></i></a>
+    </div>
+<div class="desc">
+    <b>Twisted Piano Player</b>
+    <p>Bobbby Cole</p>
+
+    <ul>
+        <li style="list-style-type: none;">Horror</li>
+        <li>Ambient</li>
+        <li>Cinematic</li>
+    </ul>
+</div>
+
+</div>
+   
+       <!-- navs  -->
+       <a class="navs" href="./task2.html">Previous Task</a> 
+<script>
+    var play = document.getElementById('playpause');
+    var audio = document.getElementById('audio');
+    function playPause() {
+            if (audio.paused) {
+                audio.play();
+                play.innerHTML = "<i style='color: gray;font-size:100px'class='fa-solid fa-circle-pause'></i>";
+            }
+            else {
+                audio.pause();
+                play.innerHTML = "<i style='color: gray;font-size:100px'class='fa-solid fa-circle-play'></i>";
+            }
+        }
+
+        play.addEventListener('click', playPause);
+</script>
+  
+</body>
+
+</html>
+

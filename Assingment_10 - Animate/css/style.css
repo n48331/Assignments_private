@@ -1,0 +1,162 @@
+:root {
+    --final-color: red;
+    --card1-color: #ffbe0b;
+    --card2-color: #3a86ff;
+    --card3-color: #ff006e;
+    --card4-color: #8338ec;
+    --bg-color: white 30%, violet;
+    /* animation variables */
+    --anim-duration: 5s;
+    --anim-time-fun: ease-out;
+    --anim-i-count: infinite;
+    --final-pos: 620px, 280px;
+}
+
+/* 
+-webkit-
+-moz-
+-ms-
+ */
+body {
+    background: radial-gradient(var(--bg-color));
+    height: 670px;
+    overflow: hidden;
+}
+
+div {
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    opacity: 0.8;
+    border-radius: 10px;
+    animation-duration: var(--anim-duration);
+    -webkit-animation-duration: var(--anim-duration);
+    -moz-animation-duration: var(--anim-duration);
+    -ms-animation-duration: var(--anim-duration);
+    animation-timing-function: var(--anim-time-fun);
+    -webkit-animation-timing-function: var(--anim-time-fun);
+    -moz-animation-timing-function: var(--anim-time-fun);
+    -ms-animation-timing-function: var(--anim-time-fun);
+    animation-iteration-count: var(--anim-i-count);
+    -webkit-animation-iteration-count: var(--anim-i-count);
+    -moz-animation-iteration-count: var(--anim-i-count);
+    -ms-animation-iteration-count: var(--anim-i-count);
+}
+
+.card1 {
+    transform: translate(620px, 0);
+    -webkit-transform: translate(620px, 0);
+    -moz-transform: translate(620px, 0);
+    -ms-transform: translate(620px, 0);
+    background-color: var(--card1-color);
+    animation-name: card1;
+    -webkit-animation-name: card1;
+    -moz-animation-name: card1;
+    -ms-animation-name: card1;
+}
+
+.card2 {
+    transform: translate(0px, 280px);
+    -webkit-transform: translate(0px, 280px);
+    -moz-transform: translate(0px, 280px);
+    -ms-transform: translate(0px, 280px);
+    background-color: var(--card2-color);
+    animation-name: card2;
+    -webkit-animation-name: card2;
+    -moz-animation-name: card2;
+    -ms-animation-name: card2;
+}
+
+.card3 {
+    transform: translate(620px, 540px);
+    -webkit-transform: translate(620px, 540px);
+    -moz-transform: translate(620px, 540px);
+    -ms-transform: translate(620px, 540px);
+    background-color: var(--card3-color);
+    animation-name: card3;
+    -webkit-animation-name: card3;
+    -moz-animation-name: card3;
+    -ms-animation-name: card3;
+}
+
+.card4 {
+    transform: translate(1220px, 280px);
+    -webkit-transform: translate(1220px, 280px);
+    -moz-transform: translate(1220px, 280px);
+    -ms-transform: translate(1220px, 280px);
+    background-color: var(--card4-color);
+    animation-name: card4;
+    -webkit-animation-name: card4;
+    -moz-animation-name: card4;
+    -ms-animation-name: card4;
+}
+
+@keyframes card1 {
+    from {
+        transform: translate(620px, 0);
+        -webkit-transform: translate(620px, 0);
+        -moz-transform: translate(620px, 0);
+        -ms-transform: translate(620px, 0);
+
+    }
+
+    to {
+        transform: translate(var(--final-pos));
+        -webkit-transform: translate(var(--final-pos));
+        -moz-transform: translate(var(--final-pos));
+        -ms-transform: translate(var(--final-pos));
+        background-color: var(--final-color);
+    }
+}
+
+@keyframes card2 {
+    from {
+        transform: translate(0px, 280px);
+        -webkit-transform: translate(0px, 280px);
+        -moz-transform: translate(0px, 280px);
+        -ms-transform: translate(0px, 280px);
+    }
+
+    to {
+        transform: translate(var(--final-pos));
+        -webkit-transform: translate(var(--final-pos));
+        -moz-transform: translate(var(--final-pos));
+        -ms-transform: translate(var(--final-pos));
+        background-color: var(--final-color);
+    }
+}
+
+@keyframes card3 {
+    from {
+        transform: translate(620px, 540px);
+        -webkit-transform: translate(620px, 540px);
+        -moz-transform: translate(620px, 540px);
+        -ms-transform: translate(620px, 540px);
+    }
+
+    to {
+        transform: translate(var(--final-pos));
+        -webkit-transform: translate(var(--final-pos));
+        -moz-transform: translate(var(--final-pos));
+        -ms-transform: translate(var(--final-pos));
+        background-color: var(--final-color);
+    }
+}
+
+@keyframes card4 {
+    from {
+        transform: translate(1220px, 280px);
+        -webkit-transform: translate(1220px, 280px);
+        -moz-transform: translate(1220px, 280px);
+        -ms-transform: translate(1220px, 280px);
+    }
+
+
+    to {
+        transform: translate(var(--final-pos));
+        -webkit-transform: translate(var(--final-pos));
+        -moz-transform: translate(var(--final-pos));
+        -ms-transform: translate(var(--final-pos));
+        background-color: var(--final-color);
+    }
+}

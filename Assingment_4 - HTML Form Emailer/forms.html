@@ -1,0 +1,108 @@
+<!-- person information form (using fieldset): name, age, dob, gender, 
+agree to t&c, email, pwd, hobbies (with styling). -->
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+
+    <style>
+        body{
+            background-color: rgb(35, 182, 187);
+            font-family: Roboto, Arial, sans-sarif;
+        }
+        form{
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+            
+            
+        }
+        input{
+            border-radius: 5px;
+            border: 0;
+            height: 30px;
+        }
+      input[type=text],
+      input[type=number],
+      input[type=password],
+      input[type=email]{
+        width: 100%;      
+      } 
+      input[type=submit]{
+        width: 40%;
+        background-color: rgb(35, 182, 187);
+        color: aliceblue;      
+      } 
+      input[type=reset]{
+        width: 30%;
+        background-color: rgb(218, 70, 70);
+        color: aliceblue;       
+      } 
+      
+      fieldset{
+        background-color: aliceblue;
+        border: 1px solid rgb(94, 94, 94);
+        border-radius: 5px;
+        
+      }
+      legend{
+        font-size: 20px;
+       
+      }
+      label{
+        text-align: left;
+
+      }
+      h1{
+        text-align: center;
+      }
+    </style>
+</head>
+<body >
+    <div>
+    <h1>Forms</h1>
+    <form action="./login.html" >
+<fieldset>
+    <legend style="text-align:left"><b>PERSONAL INFORMATION</b> </legend>
+    <!-- name -->
+    <label>Enter name</label><br>
+    <input type="text" placeholder="Please enter name" required><br><br>
+    <!-- Email -->
+    <label>Enter email</label>
+    <input type="email" placeholder="Please enter your email"><br><br>
+    <!-- password -->
+    <label>Enter password</label>
+    <input type="password" placeholder="Enter password"><br><br>
+    <!-- Confirm password -->
+    <label>Confirm password</label>
+    <input type="password" placeholder="confirm password"><br><br>
+    <!-- Hobbies -->
+    <label>Hobbies</label>
+    <input type="text" placeholder="Enter your hobbies"><br><br>
+    <!-- Age -->
+    <label for="age">Enter Age</label>
+    <input style="width: 20%;" type="number" placeholder="Age" name="age" min="18" max="80"><br><br>
+    <!-- DOB -->
+    <label for="dob">Select DOB : </label>
+    <input type="date" name="dob" min="18" max="80"><br><br>
+    <!-- Gender -->
+    Gender :
+    <input style="height: 15px ;" type="radio" name="gender" value="male">
+    <label>Male</label>
+    <input style="height: 15px ;" type="radio" name="gender" value="female">
+    <label>Female</label><br><br>
+    <!-- TOC -->
+    <p>
+        <input style="height: 15px ;" type="checkbox" name="agree">
+        <span >I agree to terms of use</span>
+    </p>
+    <!-- Buttons -->
+    <input  type="submit" value="Submit">
+    <input  type="reset" value="Reset"><br><br>
+    
+</fieldset>
+</form>
+</div>
+</body>
+</html>

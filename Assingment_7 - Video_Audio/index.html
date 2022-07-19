@@ -1,0 +1,53 @@
+<!-- 1.	Replicate below card, add video at top.
+You can choose styling the way you want.
+Add subtitle to video.
+Consider fallback content -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task-1</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+       
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>ROTATING EARTH</h3>
+        <div class="content">
+            <video width="300" height="190" autoplay loop preload="metadata">
+                <source src="./video/file_example_MP4_480_1_5MG.mp4" type="video/mp4">
+                <source src="./video/file_example_OGG_480_1_7mg.ogg" type="video/ogg">
+                <!-- captions -->
+                <track src="./caption/intro.vtt" kind="subtitles" srclang="en" label="English" default>
+                <!-- fallback -->
+                <p>Download video: </p>
+                <a href="./video/file_example_MP4_480_1_5MG.mp4">MP4</a>
+                <a href="./video/file_example_OGG_480_1_7mg.ogg">OGG</a>
+            </video>
+        </div>
+        <div style="border: 2px solid grey;border-top: 0; width: 320px;">
+            <div style="padding: 13px;">
+                <i>
+                    Nostrum saepe possimus magnam, quod distinctio explicabo odio exercitationem pariatur cupiditate
+                    totam.
+                </i><br><br>
+                <b>Scientific Name</b> : Lorem, ipsum. <br>
+                <b>Average Length</b> : 50 cms <br>
+                <b>Average Lifespan</b> : 17 Years <br>
+                <b>Habitat</b> : Lorem ipsum dolor sit amet consectetur.
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae aspernatur sint doloremque natus,
+                    autem dolorum ex eum. Reprehenderit tenetur ut tempora temporibus delectus sapiente ullam
+                    consectetur sint vitae recusandae. Accusamus!</p>
+            </div>
+        </div>
+
+    </div>
+    <!-- navs  -->
+    <a href="./task2.html">Next Task</a>
+</body>
+
+</html>

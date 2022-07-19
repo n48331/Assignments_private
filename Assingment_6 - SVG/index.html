@@ -1,0 +1,35 @@
+<!-- 1.	Replicate the below image using SVG- Consider exact styling. -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>SVG</title>
+
+</head>
+
+<body>
+
+    <svg height="500" width="500">
+        <path d="
+            M 100 200
+            L 400 200
+            L 150 400
+            L 250 100
+            L 350 400
+            L 100 200
+            L 400 200
+            " stroke="purple" stroke-width="7" fill="lightgreen" fill-opacity="0.2" />
+    </svg>
+    <svg height="500" width="500">
+        <defs>
+            <pattern id="ptrn1"  width="80" height="80" patternUnits="userSpaceOnUse">
+                <circle cx="40" cy="40" r="40" fill="red"  />
+            </pattern>
+        </defs>
+        <rect x="80" y="80" height="200" width="400" fill="url(#ptrn1)" stroke='black' stroke-width="4" />
+    </svg>
+
+</body>
+
+</html>

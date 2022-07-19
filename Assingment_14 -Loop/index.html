@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <h3>• sum of digits: e.g. (123: 1 + 2 + 3 = 6) or (1234 : 1 + 2 + 3 + 4 = 10)</h3>
+    <div id="div1">
+        <input type="text" id="div1_input" placeholder="Enter a number"><br>
+        <button onclick="getSum()">Get Sum</button>
+        <h4 id="div1_result"></h4>
+    </div>
+
+    <h3>• palindrome string (aca: aca(reverse) is a palindrome, abc: cba is not a palindrome): try it with loops/array
+        method</h3>
+        <div id="div2">
+            <input type="text" id="div2_input" placeholder="Enter a string"><br>
+            <button onclick="isPalindrome()">Check palindrome or not</button>
+            <h4 id="div2_result"></h4>
+        </div>
+
+    <h3>• From 1 to 100, print "foo" if multiple of 3, "bar" if multiple of 5, if multiple of both display "hello" or
+        else print the number
+        e.g.
+        1
+        2
+        foo
+        4
+        bar
+        foo
+    </h3>
+    <button onclick="printNum()">print</button>
+    <div id="div3_result"></div>
+
+    <h3>• count occurrence of a particular character in a string (hello: count of l is 2): try using loops</h3>
+    <div id="div4">
+        <input type="text" id="div4_input1" placeholder="Enter a String"><br>
+        <input type="text" id="div4_input2" placeholder="Enter a character"><br>
+        <button onclick="countStr()">Get count</button>
+        <h4 id="div4_result"></h4>
+    </div>
+
+    <h3>• add only even numbers in an array (array elements to be input by user)</h3>
+    <div id="div5">
+        <input type="text" id="div5_input" placeholder="Enter coma separated values"><br>
+        <button onclick="getEven()">Get Even numbers</button>
+        <h4 id="div5_result"></h4>
+    </div>
+
+    <h3>• biggest of even number in an array ([10, 12, 90, 93, 707]): biggest even number is 90</h3>
+    <div id="div6">
+        <input type="text" id="div6_input"  placeholder="Enter coma separated values"><br>
+        <button onclick="bigEven()">Get biggest Even number</button>
+        <h4 id="div6_result"></h4>
+    </div>
+
+    <h2>2. Create a dropdown using js, when user click on a button it should display default selected item in the UI.
+        For creating a drop down take array.</h2>
+    <div id="div7">
+        <select name="dropdown" id="div7_input">
+        </select>
+        <button onclick="diaplayName()">Select</button>
+        <h4 id="div7_result"></h4>
+    </div>
+
+    <script src="./js/loop.js"></script>
+</body>
+
+</html>
