@@ -1,0 +1,172 @@
+:root{
+    --primary-color:#000075;
+    --bg-color:white;
+    /* --bg-color:rgb(248, 248, 248); */
+    --card-color:#f3f2f2;
+    --p-color:rgb(155, 152, 152);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--bg-color);
+}
+.header h1{
+    color: var(--primary-color);
+    font-size: 20px;
+}
+.header p{
+    font-size: 14px;
+}
+img{
+    width: 100%;
+}
+
+.float{
+    float: left;
+}
+.floatR{
+    float: right;
+}
+
+.cards,.header{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-bottom: 80px;
+}
+
+
+.card{
+    height: 300px;
+    border-radius: 20px;
+    margin-bottom: 80px;
+}
+.card:nth-child(odd){
+    background: linear-gradient(to right, var(--card-color),white, white);
+
+}
+.card:nth-child(even){
+    background: linear-gradient(to left, var(--card-color),white, white);
+}
+.card:nth-child(odd) .image{
+    width: 400px;
+    margin-top: -60px;
+
+}
+.card:nth-child(even) .image{
+    width: 550px;
+    float: left;
+    margin-left: -60px;
+    margin-top: -60px;
+
+}
+.card:nth-child(even) .content{
+    padding: 80px;
+}
+.card:nth-child(odd) .content{
+    width: 55%;
+    padding: 100px;
+}
+.content span{
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+.content p{
+    color: var(--p-color);
+    margin-bottom: 40px;
+    font-size: 12px;
+}
+.content a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+@media screen and  (max-width :1000px){
+    .card{
+        height: 200px;
+    }
+    .card:nth-child(odd) .image{
+        width: 200px;
+        margin-top: 20px;
+
+    }
+    .card:nth-child(even) .image{
+        width: 250px;
+        margin-left: -10px;
+        margin-top: 20px;
+    }
+    .card:nth-child(even) .content{
+        padding: 30px;
+    }
+    .card:nth-child(odd) .content{
+        padding: 30px;
+    }
+    .content span{
+        font-size: 25px;
+        font-weight: bold;
+        color: var(--primary-color);
+    }
+    .content p{
+        color: var(--p-color);
+        margin-bottom: 25px;
+        font-size: 8px;
+    }
+    .content a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 10px;
+    }
+}
+@media only screen and  (max-width :450px){
+    *{
+        text-align: center;
+    }
+    .card{
+        height: 500px;
+        margin-bottom: 60px;
+    }
+    /* .floatR{
+        float: left;
+    } */
+    .card:nth-child(odd), .card:nth-child(even){
+        background:  var(--card-color)
+    
+    }
+    .card:nth-child(odd) .image{
+        width: 250px;
+        margin-top: 30px;    
+        margin-left: 10px;
+    }
+    .card:nth-child(even) .image{
+        width: 250px;
+        margin-left: 20px;
+        margin-top: 60px;
+
+    }
+    .card:nth-child(even) .content{
+        padding:40px 30px;
+    }
+    .card:nth-child(odd) .content{
+        width: 100%;
+        padding:40px 30px;
+    }
+    .content span{
+        font-size: 25px;
+        font-weight: bold;
+        color: var(--primary-color);
+    }
+    .content p{
+        color: var(--p-color);
+        margin-bottom: 40px;
+        font-size: 12px;
+    }
+    .content a{
+        font-size: 15px;
+    }
+}

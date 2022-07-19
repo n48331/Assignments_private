@@ -1,0 +1,27 @@
+body{
+    background-image: url('../image/pattern2.png');
+    background-size: 180px;
+}
+header{
+    background-color: #E3FDFD;
+    height: 100px;
+}
+img{
+    width: 300px;
+    margin:0 15px;
+
+}
+footer{
+    background-color: #71C9CE;
+    height: 100px;
+    
+}
+div{
+    margin: 40px 0;
+}
+a{
+    cursor: pointer;
+}
+img:hover{
+   outline: 5px solid #22e1eb;
+}

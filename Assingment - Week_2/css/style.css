@@ -1,0 +1,31 @@
+header{
+    height: 620px;
+}
+header img{
+    height: 600px;
+    margin-top: 20px;
+}
+.blue-box{
+    width: 450px;
+    height: 580px;
+    background-color: #00bcff;
+    float: right;
+    margin-top: 40px;
+}
+.line{
+    color: rgb(200, 200, 200);
+    opacity: .5;
+}
+.line-text{
+    position: absolute;
+    width: 55%;
+    right: 458px;
+    top: 40px;
+}
+.text{
+    position: absolute;
+    bottom: 10px;
+    color: rgb(200, 200, 200);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
