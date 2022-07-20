@@ -1,0 +1,97 @@
+
+<!-- taskcreate a rectangle with dotted lines -->
+<!-- create a path with 3 lines, add some color -->
+<!-- task -->
+<!-- add radial gradient to eclipse add gradient to text -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Day_6_Task</title>
+    
+</head>
+<body>
+    <svg height = "300" width="500">
+        <rect 
+        x='50' 
+        y="50" 
+        height = "200" 
+        width="400"
+        stroke="red"
+        stroke-width = '5'
+        stroke-dasharray = '4 1 8'
+        fill="none"
+         />
+    </svg>
+    <svg height = "300" width="500">
+        <g>
+            <path
+            d="
+            M 50 80
+            L 380 50
+            M 280 50
+            L 80 180
+            L 100 60
+            "
+            stroke="blue"
+            stroke-width="5"
+            fill="none"
+            />
+            <path
+            d="
+            M 280 50
+            L 80 180
+            "
+            stroke="orange"
+            stroke-width="5"
+            /> 
+            <path
+            d="
+            M 180 180
+            L 100 60
+            "
+            stroke="green"
+            stroke-width="5"
+            />
+        </g>
+        
+    </svg>
+    <svg height = "300" width="500">
+        <defs>
+            <radialGradient id="grd1"
+            cx="50%"
+            cy="50%"
+            r="50%"
+            fx="50%"
+            fy="50%">
+        <stop offset="0%" style="stop-color: white;" />
+        <stop offset="50%" style="stop-color: orange;" />
+        <stop offset="100%" style="stop-color: red;" />
+        </radialGradient>
+        </defs>
+        <ellipse
+        cx="300"
+        cy="80"
+        rx="200"
+        ry="80"
+        fill="url('#grd1')"
+        />
+    </svg>
+    <svg height = "300" width="500">
+        <defs>
+            <linearGradient id="grd2"
+            x1="0%"
+            y1="100%"
+            x2="100%"
+            y2="0%">
+        <stop offset="0%" style="stop-color: blue;" />
+        <stop offset="100%" style="stop-color: red;" />
+        </linearGradient>
+        </defs>
+        <text x="80" y="80" fill="url('#grd2')" style="font-size: 50px;">
+            TEXT
+        </text>
+    </svg>
+
+</body>
+</html>
