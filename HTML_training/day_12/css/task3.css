@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+.column{
+    float: left;
+    width: 33.3%;
+    background-color: antiquewhite;
+    font-size: 20px;
+    
+}
+img{
+    width: 100%;
+}
+p{
+    margin: 10px;
+}
+@media screen and (max-width:600px) {
+    .column{
+        width: 50%;
+        font-size: 15px;
+    }
+    img{
+        max-width: 500px;
+    }
+
+}
+@media screen and (max-width:400px) {
+    .column{
+        width: 100%;
+    }
+
+}
+
