@@ -1,0 +1,91 @@
+<!--
+add any text (add font family and italics) and ** line width = 10 ** with color with linear gradient to text
+tranform 3 rectangles using canvas
+
+and download it when user click on download button/a 
+
+consider fallback content.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Day_5_Task</title>
+    <style>
+         /* to handling fallback content */
+         canvas {
+            background-image: url('');
+        }
+
+        canvas.active {
+            background-image: none;
+        }
+        a{
+            text-decoration: none;
+            background-color:yellowgreen;
+            padding: 8px;
+            margin-left: 20px;
+            color: black;
+        }
+        canvas{
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas" width="800px" height="550px">
+        your browser does not support canvas</canvas>
+    <br><br>
+    <!-- download it when user click on download button/a  -->
+    <a 
+    id="download" 
+    download="myImage.jpg" 
+    href="" 
+    onclick="downloadImage(this)">Download</a>
+
+<script>
+    var canvas = document.getElementById('myCanvas')
+    var context = canvas.getContext('2d');     
+    if(context){
+
+        // font family and italics
+        context.font='italic 100px Arial';
+        context.lineWidth=10;
+        console.log(window.devicePixelRatio);
+        
+        // color with linear gradient to text
+        var grd = context.createLinearGradient(150,100,250,200)
+        grd.addColorStop(0,'#879AF2');
+        grd.addColorStop(0.5,'#D3208B');
+        grd.addColorStop(1,'#FDA000');
+        context.fillStyle=grd;
+    
+        // Text
+        context.fillText('Hello', 150, 100);
+        
+        // tranform 3 rectangles using canvas
+        context.transform(1,  1.5, -1.5, 1, 450, -250);
+        context.fillStyle='orange';
+        context.fillRect(200,200,100,100);
+    
+        
+        context.transform(1,  1, -1, 1, 200, -200);
+        context.fillStyle='red';
+        context.fillRect(200,200,100,80);
+    
+        
+        context.transform(1,  1, -1, 1, 250, -220);
+        context.fillStyle='violet';
+        context.fillRect(200,200,50,50);
+    }
+
+    downloadImage = function (el) {
+            // toDataURL ??
+                var image = canvas.toDataURL('image/jpg');
+                el.href = image;
+            }
+   
+    
+</script>
+</body>
+</html>

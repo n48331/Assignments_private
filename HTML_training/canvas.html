@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="500px" height="500px"
+    style="border: 1px solid;">your browser does not support canvas</canvas>
+
+<script>
+    var canvas = document.getElementById('myCanvas')
+    var ctx = canvas.getContext('2d');
+
+    ctx.moveTo(100,150);
+    ctx.lineTo(400,50);
+    ctx.lineWidth =15;
+    ctx.strokeStyle = 'blue'
+    ctx.lineCap = 'round'
+    ctx.stroke()
+    
+
+    // Circle
+    ctx.beginPath();
+    ctx.strokeStyle = 'orange'
+    ctx.arc(95,50,40,0,4)
+    ctx.stroke()
+</script>
+</body>
+</html>

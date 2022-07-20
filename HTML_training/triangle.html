@@ -1,0 +1,47 @@
+<!-- add linear/radial gradient to a traingle
+line width 10, add line color -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Triangle</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="1000px" height="600px"
+    style="border: 1px solid;">your browser does not support canvas</canvas>
+
+<script>
+    var canvas = document.getElementById('myCanvas')
+    var ctx = canvas.getContext('2d');
+
+    ctx.beginPath();
+    ctx.moveTo(75,50);
+    ctx.lineWidth = 10;
+    ctx.lineTo(200,400);
+    ctx.lineTo(400,200);
+    ctx.lineTo(75,50);
+
+    var grd = ctx.createRadialGradient(238,50,10,238,50,300)
+    grd.addColorStop(0,'#879AF2');
+    grd.addColorStop(0.5,'#D3208B');
+    grd.addColorStop(1,'#FDA000');
+    ctx.strokeStyle = 'black'
+    ctx.stroke();
+    ctx.fillStyle = grd
+    ctx.fill();
+
+    ctx.moveTo(450,250);
+    ctx.beginPath();
+    ctx.lineWidth = 10;
+    ctx.arc(750,250,170,0,2*Math.PI);    
+    var grd = ctx.createLinearGradient(0,0,750,300)
+    grd.addColorStop(0,'#879AF2');
+    grd.addColorStop(0.5,'#D3208B');
+    grd.addColorStop(1,'#FDA000');
+    ctx.fillStyle = grd
+    ctx.fill();
+    ctx.stroke()
+    
+</script>
+</body>
+</html>

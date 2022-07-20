@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Pie Chart</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="500px" height="500px"
+    style="border: 1px solid;">your browser does not support canvas</canvas>
+
+<script>
+    var canvas = document.getElementById('myCanvas')
+    var context = canvas.getContext('2d');
+    beginAngle = 0
+    endAngle = 0
+    var colors = ['red','blue','orange','pink','yellow','violet']
+    var angles = [Math.PI * 0.3,Math.PI * 0.4,Math.PI * 0.5,Math.PI * 0.2,Math.PI * 0.4,Math.PI * 0.2]
+    for (var i = 0; i < angles.length; i++) {
+        beginAngle = endAngle;
+        endAngle = endAngle + angles[i]
+        context.beginPath();
+        context.fillStyle = colors[i];
+        context.moveTo(200,200);
+        context.arc(200,200,120,beginAngle,endAngle)
+        context.lineTo(200,200)
+        context.stroke();
+        context.fill()
+    }
+    
+</script>
+</body>
+</html>
