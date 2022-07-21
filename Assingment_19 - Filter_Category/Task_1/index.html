@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+</head>
+
+<body>
+    <div class="filter">
+        <div class="product">
+            <h2>Select Product</h1>
+                <div class="checkbox">
+                    <label><input type="checkbox" rel="tshirt" onchange="change()">T-shirt</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" rel="watch" onchange="change()">Watch</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" rel="cap" onchange="change()">Cap</label>
+                </div>
+        </div>
+
+        <div class="color">
+            <h2>Select color</h2>
+            <div class="checkbox">
+                <label id="white"><input type="checkbox" rel="white" onchange="change()">White</label>
+            </div>
+            <div class="checkbox">
+                <label id="black"><input type="checkbox" rel="black" onchange="change()">Black</label>
+            </div>
+            <div class="checkbox">
+                <label id="blue"><input type="checkbox" rel="blue" onchange="change()">Blue</label>
+            </div>
+            <div class="checkbox">
+                <label id="green"><input type="checkbox" rel="green" onchange="change()">Green</label>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="result">
+        <div class="tshirt white">
+            <img src="./images/tshirt_white.jpg">
+            <p>T-Shirt Harajuku Streetwear</p>
+            <span class="price">&#8377;299</span>
+        </div>
+        <div class="cap blue">
+            <img src="./images/cap_blue.jpg">
+            <p>Solid Cotton Baseball/Summer Cap</p>
+            <span class="price">&#8377;299</span>
+        </div>
+
+        <div class="tshirt blue">
+            <img src="./images/tshirt_blue2.jpg">
+            <p>T-Shirt Harajuku Streetwear</p>
+            <span class="price">&#8377;699</span>
+        </div>
+
+        <div class="watch green">
+            <img src="./images/watch_green.jpg">
+            <p> Wave Lite Smartwatch with 1.69" HD Display</p>
+            <span class="price">&#8377;2599</span>
+        </div>
+
+
+        <div class="watch blue">
+            <img src="./images/watch_blue.jpg">
+            <p> Wave Lite Smartwatch with 1.69" HD Display</p>
+            <span class="price">&#8377;1299</span>
+        </div>
+
+        <div class="cap white">
+            <img src="./images/cap_white.jpg">
+            <p>Solid Cotton Baseball/Summer Cap</p>
+            <span class="price">&#8377;299</span>
+        </div>
+        <div class="tshirt green">
+            <img src="./images/tshirt_green.jpg">
+            <p>T-Shirt Harajuku Streetwear</p>
+            <span class="price">&#8377;299</span>
+        </div>
+        <div class="tshirt blue">
+            <img src="./images/tshirt_blue.jpg">
+            <p>T-Shirt Harajuku Streetwear</p>
+            <span class="price">&#8377;599</span>
+        </div>
+        <div class="watch white">
+            <img src="./images/watch_white.jpg">
+            <p> Wave Lite Smartwatch with 1.69" HD Display</p>
+            <span class="price">&#8377;299</span>
+        </div>
+        <div class="cap green">
+            <img src="./images/cap_green2.jpg">
+            <p>Solid Cotton Baseball/Summer Cap</p>
+            <span class="price">&#8377;1299</span>
+        </div>
+        <div class="cap black">
+            <img src="./images/cap_black.jpg">
+            <p>Solid Cotton Baseball/Summer Cap</p>
+            <span class="price">&#8377;299</span>
+        </div>
+        <div class="tshirt black">
+            <img src="./images/tshirt_black.jpg">
+            <p>T-Shirt Harajuku Streetwear</p>
+            <span class="price">&#8377;899</span>
+        </div>
+        <div class="watch black">
+            <img src="./images/watch_black.jpg">
+            <p> Wave Lite Smartwatch with 1.69" HD Display</p>
+            <span class="price">&#8377;1799</span>
+        </div>
+        <div class="cap green">
+            <img src="./images/cap_green.jpg">
+            <p>Solid Cotton Baseball/Summer Cap</p>
+            <span class="price">&#8377;299</span>
+        </div>
+        <div class="tshirt green">
+            <img src="./images/tshirt_green2.jpg">
+            <p>T-Shirt Harajuku Streetwear</p>
+            <span class="price">&#8377;299</span>
+        </div>
+    </div>
+
+    <script src="./filter.js"></script>
+</body>
+
+</html>
+
+
+
+<!-- for jquery: isotope plugin -->
