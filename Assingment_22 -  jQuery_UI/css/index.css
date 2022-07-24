@@ -1,0 +1,23 @@
+.task1 p {
+    position: relative;
+}
+
+.task1 img {
+    width: 45px;
+    position: absolute;
+    top: -8px;
+}
+
+.task2 input,
+.task1 input {
+    padding: 5px 20px;
+}
+
+.autocomplete {
+    background-color: rgb(76, 214, 252);
+}
+
+.task1.task2,
+.task3 {
+    margin-top: 30px;
+}
